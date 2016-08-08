@@ -1,2 +1,42 @@
-<h1>Authentications#new</h1>
-<p>Find me in app/views/authentications/new.html.erb</p>
+<h1>Register</h1>
+<%= form_for @user, url: register_path do |f| %>
+    <% if @user.errors.any? %>
+        <% for message in @user.errors.full_messages %>
+            <div class="alert alert-danger" role="alert">
+                <%= message %>
+            </div>
+        <% end %>
+    <% end %>
+
+  <fieldset class="form-group">
+    <%= f.label :username %>
+    <%= f.text_field :username, class: "form-control" %>
+  </fieldset>
+  <fieldset class="form-group">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, class: "form-control" %>
+  </fieldset>
+  <fieldset class="form-group">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, class: "form-control" %>
+  </fieldset>
+  <fieldset class="form-group">
+    <%= f.label :email %>
+    <%= f.text_field :email, class: "form-control" %>
+  </fieldset>
+  <fieldset class="form-group">
+    <%= f.label :password %>
+    <%= f.password_field :password, class: "form-control" %>
+  </fieldset>
+
+  <fieldset class="field">
+    <%= f.label :profile_image %><br />
+    <%= f.file_field :profile_image, class: "form-control" %>
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, class: "form-control" %>
+  </fieldset>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

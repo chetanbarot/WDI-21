@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
-  get 'authentications/new'
 
-  get 'authentications/create'
+  resources :recipes
+  root "users#index"
 
-  get 'users/index'
+  resources :users, except: [:new, :create]
 
-  get 'users/show'
+  get "register", to: "authentications#new"
+  post "register", to: "authentications#create"
 
-  get 'users/edit'
-
-  get 'users/update'
-
-  get 'users/destroy'
+  resources :sessions, only: [:create]
+  
+  get "login", to: "sessions#new"
+  delete "logout", to: "sessions#destroy"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
