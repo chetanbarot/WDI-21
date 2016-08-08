@@ -7,12 +7,12 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @recipe.image %>
+    <%= image_tag @recipe.image.url %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @recipe.user %>
+  <%= @recipe.user.first_name %> <%= @recipe.user.last_name %>
 </p>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
