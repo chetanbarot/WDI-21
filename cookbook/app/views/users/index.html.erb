@@ -6,12 +6,11 @@
 </div>
 
 <% @users.each do |user| %>
-  <tr>
-    <td><%= user.first_name %></td>
-    <td><%= user.last_name %></td>
-    <td><%= image_tag user.profile_image.url %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <ul>
+    <li><%= user.first_name %> <%= user.last_name %></li>
+    <li><%= image_tag user.profile_image.thumb.url %></li>
+    <li><%= link_to 'Show', user %></li>
+    <li><%= link_to 'Edit', edit_user_path(user) %></li>
+    <li><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+  </ul>
 <% end %>
