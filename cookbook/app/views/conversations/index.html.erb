@@ -1,8 +1,11 @@
 <h1>Inbox</h1>
-<ul>
+<ul class="list-group">
   <% @conversations.each do |conversation| %>
-    <% recipient = conversation.sender_id == current_user.id ? conversation.receiver : conversation.sender %>
-    <li><%= link_to recipient.username, conversation_messages_path(conversation) %></li>
+    <li class="list-group-item"><%= link_to conversation.recipient(current_user).username, conversation_messages_path(conversation) %>
+      <% if !conversation.unread_message_count(current_user).zero? %>
+        <span class="tag tag-info tag-pill"><%= conversation.unread_message_count(current_user) %></span>
+      <% end %>
+    </li>
   <% end %>
 </ul>
 

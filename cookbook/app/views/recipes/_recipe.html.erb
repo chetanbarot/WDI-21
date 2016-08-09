@@ -3,7 +3,7 @@
      <div class="card-block">
       <h1 class="card-title"><%= recipe.title %></h1>
       <% recipe.images.each do |image| %>
-        <%= image_tag image.detail.url %>
+        <%= image_tag image.detail.url, class: "recipe-border" %>
       <% end %>
         <p class="card-text">Added by <%= link_to recipe.user.username, recipe.user %></p>
       <small class="text-muted">Added on <%= distance_of_time_in_words(Time.now, recipe.created_at) %> ago</small></p>

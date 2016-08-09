@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160808152014) do
+ActiveRecord::Schema.define(version: 20160809135824) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20160808152014) do
     t.text     "method"
     t.float    "time"
     t.string   "images",      default: [],              array: true
+    t.integer  "category_id"
     t.index ["user_id"], name: "index_recipes_on_user_id", using: :btree
   end
 
