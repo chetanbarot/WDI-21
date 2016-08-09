@@ -5,5 +5,13 @@
   <%= @category.name %>
 </p>
 
+<h1>Quotes</h1>
+
+<div class="card-deck-wrapper">
+    <div class="card-deck">
+        <%= render @category.recipes %>
+    </div>
+</div>
+
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>

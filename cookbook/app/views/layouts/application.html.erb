@@ -30,6 +30,15 @@
               <li class="nav-item">
                 <%= link_to "Add Recipe", new_recipe_path, class: "nav-link" %>
               </li>
+
+              <li class="nav-item">
+                <%= link_to "Add Category", new_category_path, class: "nav-link" %>
+              </li>
+
+              <li class="nav-item">
+                <%= link_to "Messages", conversations_path, class: "nav-link" %>
+              </li>
+
            
               <li class="nav-item">
                 <%= link_to current_user.username, current_user, class: "nav-link" %>

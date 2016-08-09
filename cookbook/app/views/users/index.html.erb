@@ -4,13 +4,3 @@
   <%= render @users %>
   </div>
 </div>
-
-<% @users.each do |user| %>
-  <ul>
-    <li><%= user.first_name %> <%= user.last_name %></li>
-    <li><%= image_tag user.profile_image.thumb.url %></li>
-    <li><%= link_to 'Show', user %></li>
-    <li><%= link_to 'Edit', edit_user_path(user) %></li>
-    <li><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-  </ul>
-<% end %>

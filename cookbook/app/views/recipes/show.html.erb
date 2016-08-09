@@ -1,13 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Content:</strong>
-  <%= @recipe.content %>
+  <strong>Title:</strong>
+  <%= @recipe.title %>
 </p>
+  <p>
+    <strong>Ingredients:</strong>
+    <%= @recipe.ingredients %>
+  </p>
+  <p>
+    <strong>Method:</strong>
+    <%= @recipe.method %>
+  </p>
+  <p>
+    <strong>time:</strong>
+    <%= @recipe.time %>
+  </p>
+  
+
 
 <p>
   <strong>Image:</strong>
-    <%= image_tag @recipe.image.url %>
+  <% @recipe.images.each_with_index do |image, index| %>
+    <%= image_tag(image.url) %>
+    <% end %>
 </p>
 
 <p>

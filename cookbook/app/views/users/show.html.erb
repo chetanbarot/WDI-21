@@ -1,11 +1,16 @@
 <h1><%= @user.username %></h1>
+<p><%= @user.first_name %> <%= @user.last_name %>'s profile</p>
+<p>
+  <b>Image:</b>
+  <%= link_to image_tag(@user.profile_image.thumb.url), @user.profile_image.url %>
+</p>
+<% if @user == current_user %>
+<li><%= link_to 'Edit', edit_user_path(@user) %></li>
+<li><%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+<% end %>
+
 <div class="card-deck-wrapper">
   <div class="card-deck">
     <%= render @user.recipes %>
   </div>
 </div>
-
-<p>
-  <b>Image:</b>
-  <%= link_to image_tag(@user.profile_image.thumb.url), @user.profile_image.url %>
-</p>

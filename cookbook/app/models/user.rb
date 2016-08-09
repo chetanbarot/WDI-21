@@ -8,7 +8,8 @@ class User < ApplicationRecord
 
   before_validation :add_default_role
 
-  has_many :recipes
+  has_many :recipes, dependent: :destroy
+
 
   mount_uploader :profile_image, ProfileImageUploader
 

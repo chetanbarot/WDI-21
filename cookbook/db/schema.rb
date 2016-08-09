@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160808083019) do
+ActiveRecord::Schema.define(version: 20160808152014) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,12 +21,38 @@ ActiveRecord::Schema.define(version: 20160808083019) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "recipes", force: :cascade do |t|
-    t.text     "content"
-    t.string   "image"
+  create_table "categories_recipes", id: false, force: :cascade do |t|
+    t.integer "category_id", null: false
+    t.integer "recipe_id",   null: false
+  end
+
+  create_table "conversations", force: :cascade do |t|
+    t.integer  "sender_id"
+    t.integer  "receiver_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.text     "body"
+    t.integer  "conversation_id"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "read",            default: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.index ["conversation_id"], name: "index_messages_on_conversation_id", using: :btree
+    t.index ["user_id"], name: "index_messages_on_user_id", using: :btree
+  end
+
+  create_table "recipes", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "user_id"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.text     "ingredients"
+    t.text     "method"
+    t.float    "time"
+    t.string   "images",      default: [],              array: true
     t.index ["user_id"], name: "index_recipes_on_user_id", using: :btree
   end
 
@@ -42,5 +68,7 @@ ActiveRecord::Schema.define(version: 20160808083019) do
     t.string   "profile_image"
   end
 
+  add_foreign_key "messages", "conversations"
+  add_foreign_key "messages", "users"
   add_foreign_key "recipes", "users"
 end
