@@ -1,11 +1,11 @@
 <div class="col-md-4">
-  <div class="card">
-     <div class="card-block">
+  <div class="card" data-ingredients="<%= recipe.ingredients.downcase.squish %>">
+    <div class="card-block">
       <h1 class="card-title"><%= recipe.title %></h1>
       <% recipe.images.each do |image| %>
         <%= image_tag image.detail.url, class: "recipe-border" %>
       <% end %>
-        <p class="card-text">Added by <%= link_to recipe.user.username, recipe.user %></p>
+      <p class="card-text">Added by <%= link_to recipe.user.username, recipe.user %></p>
       <small class="text-muted">Added on <%= distance_of_time_in_words(Time.now, recipe.created_at) %> ago</small></p>
       <%= link_to 'View', recipe, class: "btn btn-primary" %>
     </div>

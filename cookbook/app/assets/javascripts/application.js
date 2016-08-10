@@ -12,7 +12,29 @@
 //
 //= require jquery
 //= require tether
+//= require turbolinks
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+
+  $recipes = $('#recipes .card');
+
+  $('#search').on('keyup', function() {
+
+    var searchString = $(this).val().toLowerCase();
+
+    $recipes.each(function() {
+      var ingredients = $(this).data('ingredients');
+
+      if(!!ingredients.match(searchString)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+      
+    });
+
+  });
+})

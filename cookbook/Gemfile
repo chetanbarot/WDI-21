@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rmagick'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'fog', require: 'fog/aws'
 
   source 'https://rails-assets.org' do
       gem 'rails-assets-tether', '>= 1.1.0'

@@ -1,11 +1,20 @@
 <h1>Recipes</h1>
-<div class="card-deck-wrapper">
+
+<form>
+  <div class="form-group">
+    <input class="form-control" placeholder="Search" id="search">
+  </div>
+</form>
+
+<div id="recipes" class="card-deck-wrapper">
   <div class="card-deck">
     <div class="row">
       <%= render @recipes %>
     </div>
+  
   </div>
-</div>
 
+
+</div>
 
 
