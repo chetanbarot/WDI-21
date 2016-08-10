@@ -9,9 +9,9 @@
 # recipe_image: File.open(Rails.root.to_s + '/seedImages/egg.png') 
 
 
-User.destroy_all
-Recipe.destroy_all
-Category.destroy_all
+["users", "recipes", "categories"].each do |table_name|
+  ActiveRecord::Base.connection.execute("TRUNCATE #{table_name} RESTART IDENTITY CASCADE")
+end
 
 u1 = User.create!(
   first_name: "Chetan",
@@ -620,48 +620,3 @@ Divide the chips between plates, top  with the chicken, lettuce, cucumber, carro
   user_id: u4.id,
   category_id: c1.id
   )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
