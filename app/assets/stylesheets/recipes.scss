@@ -2,8 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.recipe-border {
+.recipe-picture {
   border: 3px solid black;
+}
+
+.recipe-card {
+  text-align: center;
+  height: 410px;
+  width: 320px;
+}
+
+.card-block {
+    
 }
 
 .card-title {
@@ -12,3 +22,11 @@
   font-size: 13px;
   text-transform: uppercase;
 }
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #9bd0ed;
+    // border-color: #0275d8;
+}
+
