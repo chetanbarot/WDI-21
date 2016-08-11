@@ -2,13 +2,13 @@ CarrierWave.configure do |config|
   if Rails.env.development? || Rails.env.test?
     config.storage = :file
   else
-    config.fog_provider = 'fog/aws'
-    config.fog_credentials = {
-      provider: 'AWS',
-      aws_access_key_id: ENV['aws_access_key'],
-      aws_secret_access_key: ENV['aws_secret_key'],
-      region: 'us-west-2'
+    config.storage = :aws
+    config.aws_acl = 'public-read'
+    config.aws_bucket = "projectcookbook"
+    config.aws_credentials = {
+      access_key_id: "AKIAIF4IYW4X5ZG7T6KA",
+      secret_access_key: "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",
+      region: 'eu-west-1'
     }
-    config.fog_directory = ENV['aws_bucket_name']
   end
 end
