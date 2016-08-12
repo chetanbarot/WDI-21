@@ -39,3 +39,5 @@ If he does choose to add a recipe he would then be taken to the Create page of t
 
 Same way a user can also edit his user show page (profile page)if wishes to do so.
 In this app i have also got a message service where  2 users can share their knowledge or views or comments about the recipe with the creator for feedback purpose that can be visited with the key on the nave bar "Messages".
+
+![]read

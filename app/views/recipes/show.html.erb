@@ -34,7 +34,7 @@
       <h4 class="card-title">Ingredients:</h4>
       <ul class="list-group">
         <% @recipe.ingredient_list.each do |ingredient| %>
-          <li class="list-group-item"><%= ingredient %></li>
+          <li ><%= ingredient %></li>
         <% end %>
       </ul>
     </div>
@@ -46,7 +46,7 @@
       <h4 class="card-title">Method:</h4>
       <ul class="list-group">
         <% @recipe.method_list.each do |method| %>
-        <li class="list-group-item"><%= method %></li>
+        <li ><%= method %></li>
       <% end %>
       </ul>
     </div>
@@ -67,7 +67,7 @@
 
 
 <div class="row">
-  <div class="col-md-12">
+  <div class= "col-md-12">
   <strong>User:</strong>
     <h1><%= @recipe.user.first_name %> <%= @recipe.user.last_name %></h1>
   </div>

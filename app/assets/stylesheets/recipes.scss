@@ -13,7 +13,7 @@
 }
 
 .card-block {
-  height: 450px;
+  // height: 450px;
 }
 
 .card-title {
@@ -76,13 +76,31 @@ strong {
 }
 
 
-.col-md-12 {
-    float: left;
-    width: 100%;
-    text-align: center;
+// .col-md-12 {
+//     float: left;
+//     width: 100%;
+//     text-align: center;
+// }
+
+.test{
+  color:black;
+  margin-bottom: 0;
 }
 
 
+.card-block {
+  background: white;
+
+}
+
+.list-group-item {
+}
+
+.list-group li {
+  list-style-type: none;
+  border: 1px solid #ddd;
+  padding: 10px 0 10px 0;
+}
 
 
 
