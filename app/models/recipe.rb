@@ -4,4 +4,12 @@ class Recipe < ApplicationRecord
 
   mount_uploaders :images, RecipeImageUploader
 
+  def ingredient_list
+    ingredients.split(', ')
+  end
+
+  def method_list
+    method.split('. ').map {|m| m << '.' if m.last != '.' }
+  end
+
 end

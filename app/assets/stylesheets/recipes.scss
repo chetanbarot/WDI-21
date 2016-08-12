@@ -13,7 +13,7 @@
 }
 
 .card-block {
-    
+  height: 450px;
 }
 
 .card-title {
@@ -50,7 +50,37 @@ strong {
     padding: 40px;
 }
 
+// .recipe-picture {
+//   border: 2px solid red;
+//   height:204px;
+//   width: 228px;
+//   background-size: fill;
 
+  
+      
+ 
+
+// }
+
+#recipe-show {
+  border: 2px solid green;
+  margin: 0 auto;
+    width: 30em;
+
+}
+
+.list-group-item:last-child {
+    font-size: 20px;
+    padding: 40px;
+    height: 300px;
+}
+
+
+.col-md-12 {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
 
 
 

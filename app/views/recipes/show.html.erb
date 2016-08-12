@@ -8,35 +8,55 @@
 </div>
 
 <div class="row">
-  <div class="col-md-6">
-  <strong>Image:</strong>
-    <h1><% @recipe.images.each_with_index do |image, index| %>
-      <%= image_tag(image.url) %>
+  <div class="col-md-12">
+    
+    <% @recipe.images.each_with_index do |image, index| %>
+   
+     <img id="recipe-show" class="media-object" src="<%= image.url %>" >
       <% end %>
-    </h1>
-  </div>
 
-  <div class="col-md-6">
-  <strong>Ingredients:</strong>
-    <h1>
-      <ul class="list-group">
-        <li class="list-group-item"><%= @recipe.ingredients %></li>
-      </ul>
-    </h1>
+
+   
   </div>
 </div>
 
+<hr>
 
 <div class="row">
-  <div class="col-md-12">
-  <strong>Method:</strong>
-    <h1>
+  <div class="card-deck-wrapper">
+  <div class="card-deck">
+
+
+
+
+  <div class="col-md-6">
+    <div class="card-block">
+      <h4 class="card-title">Ingredients:</h4>
       <ul class="list-group">
-        <li class="list-group-item"><%= @recipe.method %></li>
+        <% @recipe.ingredient_list.each do |ingredient| %>
+          <li class="list-group-item"><%= ingredient %></li>
+        <% end %>
       </ul>
-    </h1>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <div class="card-block">
+      <h4 class="card-title">Method:</h4>
+      <ul class="list-group">
+        <% @recipe.method_list.each do |method| %>
+        <li class="list-group-item"><%= method %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+
+  </div>  
   </div>
 </div>
+
+<hr>
 
 <div class="row">
   <div class="col-md-12">
@@ -53,6 +73,7 @@
   </div>
 </div>
 
+<hr>
 
 <div class="row">
   <div class="col-md-12">

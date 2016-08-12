@@ -167,7 +167,7 @@ SEA SALT AND CRACKED BLACK PEPPER
 ½ CUP (120G) SOUR CREAM, PLUS EXTRA TO SERVE 
 1 X 400G CAN BLACK BEANS, RINSED AND DRAINED 
 1 CUP CORIANDER (CILANTRO) LEAVES 
-CHILLI SAUCE AND LIME WEDGES, TO SERVE",
+CHILLI SAUCE AND LIME WEDGES TO SERVE",
   method: "Place the chorizo in a small food processor and process until finely chopped. Heat the oil in a large non-stick frying pan over high heat. Add the chicken, chorizo, garlic, chilli, salt and pepper and cook, breaking up any lumps with a wooden spoon, for 12–15 minutes or until browned and cooked through. 
 Divide the chicken mixture between the tortillas. Top with the avocado, sour cream, black beans and coriander. Serve with the chilli sauce, lime and extra sour cream. Serves 4.",
   time: "20 MINS",
@@ -206,7 +206,7 @@ SEA SALT AND CRACKED BLACK PEPPER
 1 EGG, LIGHTLY BEATEN 
 ¼ CUP CHOPPED BASIL LEAVES 
 2 TABLESPOONS OLIVE OIL 
-TOMATO CHUTNEY, TO SERVE",
+TOMATO CHUTNEY TO SERVE",
   method: "Heat a non-stick frying pan over high heat. Add the bacon and cook for 3–4 minutes or until golden. 
 Place the mashed whitebean, broccoli, quinoa, salt, pepper, mozzarella, egg, bacon and basil in a bowl and mix well to combine. Shape 2 tablespoonfuls ofthe mixture at a time into fritters and refrigerate for 20 minutes. 
 Heat the oil in a large frying pan over medium heat and cook the fritters, in batches, for 2–3 minutes each side or until golden. Serve with tomato chutney and a green salad, if desired. Serves 4.",
@@ -278,7 +278,7 @@ r6 = Recipe.create!(
 ¼ CUP (60ML) POURING (SINGLE) CREAM 
 3 EGGS 
 1 TABLESPOON PLAIN (ALL-PURPOSE) FLOUR, SIFTED 
-VANILLA OR COFFEE ICE-CREAM, TO SERVE",
+VANILLA OR COFFEE ICE-CREAM TO SERVE",
   method: "Preheat oven to 150°C (310°F). Place the chocolate, butter, sugar and cream in a saucepan over low heat and stir until melted and smooth. 
 Place the eggs and flour in a bowl and whisk to combine. Gradually whisk in the chocolate mixture and pour into six lightly greased 1 cup-capacity (250ml) ovenproof dishes. 
 Place the dishes in a deep baking dish and pour in enough water to come halfway up the sides of the dishes. Bake for 45 minutes or until puffed and firm to touch. Refrigerate until cooled. Top with scoops of ice-cream to serve. Serves 4.",
@@ -299,7 +299,7 @@ r7 = Recipe.create!(
 1 TEASPOON VANILLA EXTRACT 
 1 CUP (220G) CASTER (SUPERFINE) SUGAR 
 2 CUPS (500ML) SINGLE (POURING) CREAM 
-STORE-BOUGHT WAFFLE CONES, TO SERVE
+STORE-BOUGHT WAFFLE CONES TO SERVE
 
 CRUMBLE
 
@@ -362,7 +362,7 @@ r10 = Recipe.create!(
   title: "ALMOND AND PEAR TARTS",
   ingredients: "4 SHEETS FROZEN BUTTER PUFF PASTRY, THAWED
 2 X 220G FIRM GREEN PEARS, PEELED, CORED AND THINLY SLICED ON A MANDOLIN
-⅓ CUP (80ML) MAPLE SYRUP, PLUS EXTRA TO SERVE
+⅓ CUP (80ML) MAPLE SYRUP PLUS EXTRA TO SERVE
 50G UNSALTED BUTTER, SOFTENED
 ¼ CUP (55G) CASTER (SUPERFINE) SUGAR
 ½ TEASPOON VANILLA EXTRACT
@@ -420,7 +420,7 @@ PESTO BUTTER
 
 100G UNSALTED BUTTER, SOFTENED 
 ¼ CUP (65G) STORE-BOUGHT PESTO 
-FINELY GRATED PARMESAN, TO SERVE
+FINELY GRATED PARMESAN TO SERVE
 NORI AND JAPANESE MAYONNAISE BUTTER
 
 
@@ -451,8 +451,8 @@ LEMON JUICE
 SEA SALT AND CRACKED BLACK PEPPER 
 6 SMALL WHOLEMEAL FLATBREADS, TOASTED
 ¼ CUP (35G) STORE-BOUGHT DUKKAH, FOR SPRINKLING 
-EXTRA VIRGIN OLIVE OIL, TO SERVE 
-LEMON WEDGES, TO SERVE",
+EXTRA VIRGIN OLIVE OIL TO SERVE 
+LEMON WEDGES TO SERVE",
   method: "Place the avocado, chickpeas, tahini, garlic, lemon juice, salt and pepper in a food processor and process until smooth. 
 Spoon the avocado hummus onto each flatbread, sprinkle with the dukkah and drizzle with oil. Serve with lemon wedges. Serves 4–6.",
   time: "20 MINS",
@@ -470,7 +470,7 @@ r14 = Recipe.create!(
 SEA SALT AND CRACKED BLACK PEPPER 
 4 SLICES RYE BREAD, TOASTED 
 1 AVOCADO, CUT INTO WEDGES 
-¼ CUP (60ML) BUTTERMILK, TO SERVE",
+¼ CUP (60ML) BUTTERMILK TO SERVE",
   method: "Place a char-grill pan over high heat. Cook  the corn, turning, for 8–10 minutes or until lightly charred. 
 Add the lime halves and cook, cut-side down, for 1–2 minutes or until lightly charred. Slice the kernels off the cob and place in a bowl. Add the coriander, chilli, salt and pepper and toss to combine. 
 Top the toast with the avocado and corn mixture and drizzle with buttermilk. Serve with grilled limes. Serves 4.",
@@ -573,7 +573,7 @@ SEA SALT AND CRACKED BLACK PEPPER
 2 GRANNY SMITH APPLES, THINLY SLICED 
 6 FIGS, HALVED 
 ½ CUP (50G) WALNUTS, TOASTED AND ROUGHLY CHOPPED 
-BABY (MICRO) BASIL, TO SERVE",
+BABY (MICRO) BASIL TO SERVE",
   method: "Place the goat’s curd, crème fraîche, lemon juice, water, salt and pepper in bowl and whisk until smooth. Set aside. 
 Arrange the apples and figs on a serving dish. Sprinkle with the walnuts and the baby basil. Serve with the goat’s curd dressing. Serves 4–6.",
   time: "20 MINS",
@@ -589,7 +589,7 @@ r19 = Recipe.create!(
 4 MARINATED ARTICHOKES, HALVED  
 SEA SALT AND CRACKED BLACK PEPPER 
 1 EGG, LIGHTLY BEATEN  
-1 TABLESPOON STORE-BOUGHT PESTO, TO SERVE",
+1 TABLESPOON STORE-BOUGHT PESTO TO SERVE",
   method: "Preheat oven to 200°C (400°F). Place the pastry on a baking tray lined with non-stick baking paper. Lightly prick the pastry with a fork and, using a knife, gently score a 2.5cm border around the edge. 
 Top the pastry with the brie and artichokes and sprinkle with salt and pepper. Lightly brush the edges with the egg and bake for 20 minutes or until golden and cooked through. Drizzle with the pesto to serve. Serves 4.",
   time: "30 MINS",
@@ -611,7 +611,7 @@ SEA SALT AND CRACKED BLACK PEPPER
 1 CARROT, SHREDDED 
 2 GREEN ONIONS, THINLY SLICED 
 1 LONG RED CHILLI, THINLY SLICED 
-CORIANDER LEAVES, TO SERVE",
+CORIANDER LEAVES TO SERVE",
   method: "Place the chicken, chilli jam and 2 tablespoons of the lime juice in a bowl and mix to combine. Set aside. 
 Place the mayonnaise, remaining lime juice, salt and pepper in small bowl and mix to combine. 
 Divide the chips between plates, top  with the chicken, lettuce, cucumber, carrot, green onions, chilli and coriander and serve with the lime mayonnaise. Serves 4.",
