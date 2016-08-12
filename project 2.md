@@ -40,4 +40,22 @@ If he does choose to add a recipe he would then be taken to the Create page of t
 Same way a user can also edit his user show page (profile page)if wishes to do so.
 In this app i have also got a message service where  2 users can share their knowledge or views or comments about the recipe with the creator for feedback purpose that can be visited with the key on the nave bar "Messages".
 
-![]read
+![](http://i1380.photobucket.com/albums/ah163/Chetanbarot/Screen%20Shot%202016-08-12%20at%2012.36.52_zpsq7vo4vni.png)
+
+![](http://i1380.photobucket.com/albums/ah163/Chetanbarot/Screen%20Shot%202016-08-12%20at%2012.43.34_zpsxz47twzp.png)
+
+![](http://i1380.photobucket.com/albums/ah163/Chetanbarot/Screen%20Shot%202016-08-12%20at%2012.43.44_zpsi0a2t0fl.png)
+
+![](http://i1380.photobucket.com/albums/ah163/Chetanbarot/Screen%20Shot%202016-08-12%20at%2012.44.42_zpsfacpl7s4.png)
+
+![](http://i1380.photobucket.com/albums/ah163/Chetanbarot/Screen%20Shot%202016-08-12%20at%2012.45.17_zpsofgrtp3l.png)
+
+![](http://i1380.photobucket.com/albums/ah163/Chetanbarot/Screen%20Shot%202016-08-12%20at%2012.45.27_zpskn8ezroz.png)
+
+![](http://i1380.photobucket.com/albums/ah163/Chetanbarot/Screen%20Shot%202016-08-12%20at%2012.45.54_zpsptufbxjd.png)
+
+**The trello for my project**
+![](http://i1380.photobucket.com/albums/ah163/Chetanbarot/Screen%20Shot%202016-08-12%20at%2013.11.07_zpspk7ilrwp.png)
+
+
+
